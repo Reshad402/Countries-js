@@ -33,6 +33,12 @@ const loadCountryDetails = (code) =>{
 }
 const displayCountryDetails = user =>{
     console.log(user)
+    const addingInHtml = document.getElementById('Input-the-details')
+    addingInHtml.innerHTML =
+    `
+    <h2>Details : ${user.name.common}</h2>
+    <img src="${user.flags.png}">
+    `
 }
 
 
