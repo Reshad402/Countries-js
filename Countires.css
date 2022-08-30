@@ -1,0 +1,11 @@
+#countries-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px
+    
+}
+.classDilam{
+    border: 3px solid red;
+    border-radius: 5px;
+    padding: 5px;
+}
