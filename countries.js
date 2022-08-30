@@ -24,7 +24,10 @@ const display=(user)=>{
 const loadCountryDetails = (code) =>{
     // used ( ` `)
     const url = `https://restcountries.com/v3.1/alpha/${code}`
-    console.log('get country details with link',url)
+    // console.log('get country details with link',url)
+    fetch(url)
+    .then(res => res.json())
+    .then(data=> console.log(data))
 }
 
 
