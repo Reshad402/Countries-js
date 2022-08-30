@@ -6,7 +6,7 @@ const country = () =>{
 const display=(user)=>{
     const userContainer = document.getElementById('countries-container')
     for(const use of user){
-        console.log(use)
+        // console.log(use)
         // Crete a div
         const divMade = document.createElement('div')
         divMade.classList.add('classDilam')
@@ -27,7 +27,12 @@ const loadCountryDetails = (code) =>{
     // console.log('get country details with link',url)
     fetch(url)
     .then(res => res.json())
-    .then(data=> console.log(data))
+    .then(data=> displayCountryDetails(data[0]))
+
+    // Here we get the object as the the obj is in the array of the first element 
+}
+const displayCountryDetails = user =>{
+    console.log(user)
 }
 
 
